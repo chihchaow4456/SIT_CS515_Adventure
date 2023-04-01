@@ -7,7 +7,7 @@ Around 16 hours were spent on this project.
 ## How I tested my code
 I tested my code manually.
 ## Bugs and Issues
-None.
+Test#14 cannot pass.
 ## An example of difficult issue how I resolved
 The most challenging issue I faced was implementing the "help" verb to meet the professor's requirements. Initially, I implemented it with only static text using the "match" syntax in Python. However, after some contemplation, I utilized the property of dictionaries to implement it dynamically; that is, I implement the 'help()' methonds on each defined Class of verb. The implemetation like the interface on other Object-Oriented programming language. This way, each verb can customize its "help()" messages to display to users.
 ## Extensions
@@ -52,7 +52,7 @@ The following map would be presented as an interaction for three extensions.
       }
     ]
 ####
-#### Abbreviations for verbs, directions, and items
+### Abbreviations for verbs, directions, and items
 This extension allows users to input abbreviated commands that match any valid commands. For example, 'i' can be used instead of 'inventory,' or 'nor' instead of 'northeast.' In the event of multiple matches, the extension will display the possible choices for the user. Here are some examples of how this extension works:
 ####
     > Taiwan
@@ -101,7 +101,7 @@ This extension allows users to input abbreviated commands that match any valid c
     What would you like to do?
 ####
 
-#### Help
+### Help
 The 'help' verb displays a list of valid commands for the user. Three distinct commands are available: 'go,' 'get,' and 'drop,' which respectively display available directions, items that can be obtained, and items that can be dropped. Here is an example interaction that demonstrates how "help" works:
 ####
     > Taiwan
@@ -135,7 +135,7 @@ The 'help' verb displays a list of valid commands for the user. Three distinct c
     What would you like to do?
 ####
 
-#### Drop
+### Drop
 The "Drop" verb extension is similar to the "Get" verb in that they both require a room to store their items, but "Drop" is the opposite of "Get". To use the "Drop" verb, you first need to pick up an item using the "Get" verb so that you can drop it later. When you use the "Drop" verb, it removes the item from your inventory and places it in the current room. Here's the interaction of "drop".
 ####
     > Taiwan
