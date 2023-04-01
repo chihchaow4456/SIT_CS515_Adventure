@@ -22,8 +22,4 @@ def getAbbr(s: list[str], cmds):
         if arr[0] in cmds:
             return cmds[arr[0]].do()
         return room.CURRENT
-    str = ""
-    str += ", ".join(arr[:-1])
-    str += f" or the {arr[-1]}"
-    print("Did you want to type the " + str + "?")
     return room.CURRENT

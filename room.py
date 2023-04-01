@@ -16,7 +16,6 @@ class Room:
     desc:str = ""
     exits:Direction = { Direction }
     items:list = []
-    idx:int = 0
     locked:bool = False
     def __init__(self, name, desc = "", exits = {Direction}, items = [], idx = 0):
         self.name = name
@@ -26,15 +25,15 @@ class Room:
         self.idx = idx
         self.locked = False
     def curPos(self):
-        print(f"{self.name}\n\n{self.desc}\n")
+        print(f"> {self.name}\n\n{self.desc}\n")
         if self.items != None and len(self.items) != 0:
             print('Items: ', end = "")
             print(", ".join(self.items))  # rose, light
             print("")
         if self.exits != None and len(self.exits) != 0:
             print('Exits: ', end = "")
-            for exit in self.exits: print(exit, end= " ")
-            print("\n")
+            print(" ".join(self.exits))
+            print("")
 
 def toRooms(json: str) -> list[Room]:
         rooms = []

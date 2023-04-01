@@ -9,14 +9,14 @@ class Go:
         r = self.r
         cur = r.exits
         if len(s) == 1:
-            print("Sorry, you need to 'go' somewhere")
+            print("Sorry, you need to 'go' somewhere.")
             return room.CURRENT
         arr = []
         dir = s[1]
         for direction in cur:
             if direction.startswith(dir): arr.append(direction)
         if len(arr) == 0:
-            print(f"There is no way to go {dir}.")
+            print(f"There's no way to go {dir}.")
             return room.CURRENT
         elif len(arr) == 1:
             print(f"You go {arr[0]}.\n")

@@ -1,7 +1,7 @@
 import room
 import json
 import sys
-import verbs.verb as verb
+from verbs import verb
 
 f = sys.argv[1]
 j = json.load(open(f))
@@ -15,7 +15,7 @@ inventory = []
 
 while stop and pos <= len(rooms):
     try:
-        print('What would you like to do?', end = " ")
+        print('What would you like to do?', end = ' ')
         s = list(map(str.lower,input('').split(' ')))  # text input and lower the str
         idx = verb.to(s, rooms, pos, inventory)
         if idx == room.CURRENT: continue
@@ -24,6 +24,7 @@ while stop and pos <= len(rooms):
             pos = idx
             rooms[pos].curPos()
     except KeyboardInterrupt:
-        print("\n Use 'quit' to exit.")
+        stop = False
     except EOFError:
-        print("\n Use 'quit' to exit.")
+        print("\nUse 'quit' to exit.")
+

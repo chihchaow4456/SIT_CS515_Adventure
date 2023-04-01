@@ -8,7 +8,7 @@ class Get:
         self.inventory:int = inventory
     def do(self)->int:
         if len(self.s) == 1:
-            print("Sorry, you need to 'get' something")
+            print("Sorry, you need to 'get' something.")
             return room.CURRENT
         if len(self.r.items) == 0:
             print(f"There's no {self.s[1]} anywhere.")
