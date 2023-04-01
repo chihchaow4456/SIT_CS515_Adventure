@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Taiwan",
+    "desc": "You are in a beautiful island nation known for its bustling night markets, stunning mountains, and scenic beaches.",
+    "items": ["bubble tea", "stinky tofu"],
+    "exits": {"west": 1, "northeast": 2}
+  },
+  {
+    "name": "China",
+    "desc": "You are in the world's most populous country, famous for its rich history, diverse culture, and mouth-watering cuisine.",
+    "items": ["dumplings", "hot pot"],
+    "exits": {"south": 4, "west": 3}
+  },
+  {
+    "name": "Japan",
+    "desc": "You are in the Land of the Rising Sun, where ancient traditions blend seamlessly with modern technology.",
+    "items": ["sushi", "ramen"],
+    "exits": {"southwest": 0, "south": 3}
+  },
+  {
+    "name": "Okinawa",
+    "desc": "You are in a tropical paradise in southern Japan, famous for its pristine beaches, crystal-clear waters, and vibrant coral reefs.",
+    "items": ["sata andagi", "shikuwasa juice"],
+    "exits": {"west": 1,"north": 2}
+  },
+  {
+    "name": "Thailand",
+    "desc": "You are in the Land of Smiles, known for its warm hospitality, exotic temples, and spicy cuisine.",
+    "items": ["pad thai","tom yum soup"],
+    "exits": {"northeast": 2,"southeast": 5}
+  },
+  {
+    "name": "Australia",
+    "desc": "You are in the Land Down Under, home to stunning natural wonders, unique wildlife, and a laid-back lifestyle.",
+    "items": ["vegemite","lamingtons"],
+    "exits": {"north": 2,"northwest": 1}
+  }
+]
