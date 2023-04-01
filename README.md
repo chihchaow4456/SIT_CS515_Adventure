@@ -55,7 +55,7 @@ The following map would be presented as an interaction for three extensions.
 #### Abbreviations for verbs, directions, and items
 This extension allows users to input abbreviated commands that match any valid commands. For example, 'i' can be used instead of 'inventory,' or 'nor' instead of 'northeast.' In the event of multiple matches, the extension will display the possible choices for the user. Here are some examples of how this extension works:
 ####
-    Taiwan
+    > Taiwan
 
     You are in a beautiful island nation known for its bustling night markets, stunning mountains, and scenic beaches.
 
@@ -65,7 +65,7 @@ This extension allows users to input abbreviated commands that match any valid c
     What would you like to do? go nor
     You go northeast.
 
-    Japan
+    > Japan
 
     You are in the Land of the Rising Sun, where ancient traditions blend seamlessly with modern technology.
 
@@ -80,7 +80,7 @@ This extension allows users to input abbreviated commands that match any valid c
     What would you like to do? go south
     You go south.
 
-    Okinawa
+    > Okinawa
     
     You are in a tropical paradise in southern Japan, famous for its pristine beaches, crystal-clear waters, and vibrant coral reefs.
     
@@ -104,7 +104,7 @@ This extension allows users to input abbreviated commands that match any valid c
 #### Help
 The 'help' verb displays a list of valid commands for the user. Three distinct commands are available: 'go,' 'get,' and 'drop,' which respectively display available directions, items that can be obtained, and items that can be dropped. Here is an example interaction that demonstrates how "help" works:
 ####
-    Taiwan
+    > Taiwan
     
     You are in a beautiful island nation known for its bustling night markets, stunning mountains, and scenic beaches.
     
@@ -138,7 +138,7 @@ The 'help' verb displays a list of valid commands for the user. Three distinct c
 #### Drop
 The "Drop" verb extension is similar to the "Get" verb in that they both require a room to store their items, but "Drop" is the opposite of "Get". To use the "Drop" verb, you first need to pick up an item using the "Get" verb so that you can drop it later. When you use the "Drop" verb, it removes the item from your inventory and places it in the current room. Here's the interaction of "drop".
 ####
-    Taiwan
+    > Taiwan
 
     You are in a beautiful island nation known for its bustling night markets, stunning mountains, and scenic beaches.
     
@@ -153,7 +153,7 @@ The "Drop" verb extension is similar to the "Get" verb in that they both require
     What would you like to do? get tofu
     You pick up the stinky tofu.
     What would you like to do? look
-    Taiwan
+    > Taiwan
     
     You are in a beautiful island nation known for its bustling night markets, stunning mountains, and scenic beaches.
     
@@ -162,7 +162,7 @@ The "Drop" verb extension is similar to the "Get" verb in that they both require
     What would you like to do? go w
     You go west.
     
-    China
+    > China
     
     You are in the world's most populous country, famous for its rich history, diverse culture, and mouth-watering cuisine.
     
@@ -184,7 +184,7 @@ The "Drop" verb extension is similar to the "Get" verb in that they both require
     What would you like to do? dro tea
     You drop the bubble tea.
     What would you like to do? look
-    China
+    > China
     
     You are in the world's most populous country, famous for its rich history, diverse culture, and mouth-watering cuisine.
     
